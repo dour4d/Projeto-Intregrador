@@ -14,6 +14,16 @@ Visualizar e-comerces
 )
 Referencias(
 napista.com.br
+icarros.com.br
+carrobrasil
 )
 
-
+Requisitos funcionais 8(
+  comprar 
+  Sistema de filtragem
+  Busca
+)
+Requisitos não funcionais 3(
+  Site responsivo 
+  intuitivo
+)
