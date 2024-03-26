@@ -4,7 +4,7 @@ Site de venda de carros
 (Funções)
 
 Crud de pessoa(cadrastro, atualização, excluir e visualisar): Nome, cpf, email
-Crud produto(cadrastro, atualização, excluir e visualisar): Nome, Preco, Cor, ano
+Crud carro(cadrastro, atualização, excluir e visualisar): Nome, Preco, Cor, ano
 
 
 
@@ -20,6 +20,10 @@ carrobrasil
 
 Requisitos funcionais 8(
   comprar 
+  vender
+  cadastrar carro
+  cadastrar pessoa 
+  
   Sistema de filtragem
   Busca
 )
