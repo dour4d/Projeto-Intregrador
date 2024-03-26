@@ -23,11 +23,12 @@ Requisitos funcionais 8(
   vender
   cadastrar carro
   cadastrar pessoa 
-  
+  financiamento  e/ou (simulação) 
   Sistema de filtragem
   Busca
 )
 Requisitos não funcionais 3(
+  mudar tema 
   Site responsivo 
   intuitivo
 )
