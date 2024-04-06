@@ -1,0 +1,21 @@
+.barra{
+    height: 100px;
+    width: 1000px;
+    right: ;
+    top: 0%;
+    position: absolute;
+    background-color: rgba(17, 6, 82, 0.815);
+    
+}
+.logo{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 3%;
+    top: 40px;
+}
+.btnav{
+    top: 10%;
+    text-align: right;
+    background-color: rgba(17, 6, 82, 0.815);
+}
