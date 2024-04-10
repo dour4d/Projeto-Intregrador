@@ -1,20 +1,15 @@
 .barra{
     height: 100px;
-    width: 1000px;
-    top: 0%;
-    position: absolute;
     background-color: #130b32;
-    
+    justify-content: space-between;
+    display: flex;
 }
 .logo{
-    position: absolute;
+    display: flex;
     width: 95px;
     height: 95px;
-    left: 3%;
-    top: 40px;
 }
 .btnav{
-    top: 10%;
-    text-align: right;
+    display:flex;
     background-color: #130b32;
 }
