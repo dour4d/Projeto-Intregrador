@@ -1,15 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
 .barra{
-    height: 100px;
-    background-color: #130b32;
+    height: 150px;
+    display:flex;
     justify-content: space-between;
-    display: flex;
+    background-color: #130b32;
+    padding: 20px;
 }
 .logo{
-    display: flex;
-    width: 95px;
-    height: 95px;
+    box-sizing: border-box;
+    /* padding: 10px; */
+}
+.menu{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
 }
 .btnav{
-    display:flex;
+    top: 10%;
     background-color: #130b32;
 }
