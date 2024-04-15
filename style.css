@@ -1,10 +1,14 @@
 *{
     margin:0px;
     padding:0px;
+}
+body{
+    height: 2000px;
+    background-color:  #130b32;
     
 }
 .barra{
-    height: 150px;
+    height: 125px;
     display:flex;
     justify-content: space-between;
     background-color: #130b32;
@@ -13,6 +17,34 @@
 .logo{
     box-sizing: border-box;
     /* padding: 10px; */
+}
+.meio{
+    border-style: solid;
+    border-color: #130b32;
+    display: flex;
+    height: 600px;
+    padding: 5%;
+    background-image: url(./Midia/img1.jpg);    
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover; 
+    justify-content: center; 
+    align-items: center;
+}
+.img{
+    box-sizing: content-box;
+    height: 90%;
+    width: 50%;
+    border-radius: 5%;
+    box-shadow: 0.5px 1px 5px white;
+    transition: 0.5s;
+}
+.img:hover{
+    box-sizing: border-box;
+    height: 90%;
+    border-radius: 5%;
+    box-shadow: 0.5px 1px 5px blue;
+    transition: 0.5s;
 }
 .menu{
     display:flex;
@@ -25,4 +57,36 @@
 .btnav{
     top: 10%;
     background-color: #130b32;
+}
+.fim{
+    height: 500px;
+    display: flex;
+    background-color: #130b32;
+    justify-content: space-between;
+    align-items: center;
+}
+.divf1{
+    height: 125px;
+}
+.uno{
+    box-sizing: border-box;
+    
+}
+.divf2{
+    height: 125px;
+}
+.fusca{
+    box-sizing: border-box;
+}
+.divf3{
+    height: 125px;
+}
+.ferrari{
+    box-sizing: border-box;
+}
+.divf4{
+    height: 125px;
+}
+.opala{
+    box-sizing: border-box;
 }
