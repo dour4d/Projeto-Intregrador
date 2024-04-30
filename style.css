@@ -289,4 +289,10 @@ body {
 }
 /*LoginPage */
 
+/*CompraPage*/
 
+.telaf{
+    height: 500px;
+    width: 700px;
+    background-color: cyan;
+}
