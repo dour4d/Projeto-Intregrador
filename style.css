@@ -295,4 +295,13 @@ body {
     height: 500px;
     width: 700px;
     background-color: cyan;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.inpu{  
+    border: 1px solid #480ca8;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 7px;
 }
