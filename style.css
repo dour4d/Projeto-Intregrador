@@ -293,10 +293,11 @@ body {
 
 .telaf{
     height: 500px;
-    width: 700px;
-    background-color: cyan;
+    width: 800px;
+    background-color: #130b32;
     gap: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .inpu{  
@@ -304,4 +305,50 @@ body {
     margin-bottom: 20px;
     margin-top: 5px;
     border-radius: 7px;
+}
+.s{
+    
+    height: 500px;
+    width: 200px;
+    border-style: dotted;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.m{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    border-style: dotted;
+    align-items: center;
+    flex-direction: column;
+    gap: 210px;
+}
+.d{
+    height: 500px;
+    width: 200px;
+    border-style: dotted;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.bot{
+    border-radius: 20%;
+    background-color: green;
+    border-color: green;
+    height: 30px;
+    width: 120px;
+}
+.bot:hover{
+    border-color: rgb(9, 197, 9);
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px rgb(9, 197, 9);
+}
+.label{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
