@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="controle.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="controle.py"></script>
     <title>Comprar</title>
 </head>
 <body>
     <div class="full">
         <div class="telaf">
-            <div>
-                <form class="s" action="#">
-                    <h3 class="titul">Forma de pagamento</h3>
-
+            <div class="s">
+                <form class="" action="#">
+                    <h3 class="C_title">Usuario</h3>
                     <div class="input-group">
-                        <label class="label">PIX:</label>
-                        <input type="text" name="text" class="inpu"  autocomplete="off" required="">
+                        <label class="label">Usuario: </label>
+                        <input type="text" name="c_nome" class="inpu"  autocomplete="off" required="" value="{{user.nome}}">
                         
                     </div>
                     <div class="input-group">
-                        <label class="label">Cartão</label>
-                        <input type="text" name="email" class="inpu"  autocomplete="off" required="">
+                        <label class="label">CPF: </label>
+                        <input type="text" name="c_cpf" class="inpu"  autocomplete="off" required="" value="{{user.cpf}}">
                         
-                </div>
-            </form> 
+                    </div>
+                </form> 
             </div>
             <div class="m">
-                <img class="fotos_carros" src="Midia/rato.png">
+                <img class="fotos_carros" src="{{ url_for('static', filename='ferrari.jpg') }}">
+                <form class="" action="#">
+                    <!-- {%for dado in dados%} -->
+                    <!-- <h3 class="C_title">Informações sobre o carro</h3> -->
+                    <div class="input-group">
+                        <label class="label">Modelo: </label>
+                        <input type="text" name="c_modelo" class="inpu"  autocomplete="off" required="" value="{{dado.modelo}}">
+
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Cor: </label>
+                        <input type="text" name="c_cor" class="inpu"  autocomplete="off" required="" value="{{dado.cor}}">
+                        
+                    </div>
+                    <div class="input-group">
+                        <label class="label">Ano: </label>
+                        <input type="text" name="c_ano" class="inpu"  autocomplete="off" required="" value="{{dado.ano}}">
+                        
+                    </div>
+                    <div class="input-group"> 
+                        <label class="label">Preço: </label>
+                        <input type="text" name="c_preco" class="inpu" autocomplete="off" required="" value="{{dado.preco}}">
+                    </div>
+                    <!-- {%endfor%} -->
+                </form> 
                 <button class="bot">Comprar</button>
             </div>
             <div class="d">
-                <form class="" action="#">
-                    <h3 class="titul">Informações sobre o carro</h3>
-
-                    <div class="input-group">
-                        <label class="label">Cor:</label>
-                        <input type="text" name="text" class="inpu"  autocomplete="off" required="">
-                        
-                    </div>
-                    <div class="input-group">
-                        <label class="label">Ano:</label>
-                        <input type="text" name="email" class="inpu"  autocomplete="off" required="">
-                        
+                <h3 class="C_title">Forma de pagamento</h3>
+                <div >
+                    <button class="bb"></button>
+                    <button class="inter"></button>
+                    <button class="bra"></button>
+                    <button class="caixa"></button>
                 </div>
-                <div class="input-group">
-                    <label class="label">Modelo:</label>
-                    <input type="text" name="email" class="inpu"  autocomplete="off" required="">
+                <div>
+                    <div>
+                        <label class="label">Cartão: </label>
+                        <input type="text" name="card" class="inpu" autocomplete="off" required>
+                    </div>
                     
-            </div>
-            </form> 
+                </div>
             </div>
         </div>
     </div>

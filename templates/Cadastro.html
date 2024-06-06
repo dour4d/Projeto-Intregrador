@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleform.css') }}">
+    <script  src="controle.py"></script>
+    <title>Cadrastro</title>
+</head>
+<body>
+    <div class="divCorpo">
+        <form class="form" action="{{ url_for('criar') }}" method="post">
+            <h1 class="titulo-form">Formulário de Cadrastro</h1>
+            <div class="input-group">
+            
+                <input type="text" name="l_nome" class="input"  autocomplete="off" required="" maxlength="20">
+                <label class="user-label">Nome</label>
+            
+            </div>
+            <div class="input-group">
+            
+                <input type="text" name="l_senha" class="input"  autocomplete="off" required="" maxlength="20">
+                <label class="user-label">Senha</label>
+            
+            </div>
+            <div class="input-group">
+            
+                <input type="text" name="cpf" class="input"  autocomplete="off" required="">
+                <label class="user-label">CPF</label>
+            
+            </div>
+            <div class="input-group">
+                <input type="text" name="cidade" class="input" autocomplete="off" required="">
+                <label class="user-label">cidade</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="bairro" class="input" autocomplete="off" required="">
+                <label class="user-label">Bairro</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="rua" class="input" autocomplete="off" required="">
+                <label class="user-label">Rua</label>
+            </div>
+            <input type="submit" class="btn-gradient" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

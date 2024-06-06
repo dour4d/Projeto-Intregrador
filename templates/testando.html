@@ -1,0 +1,28 @@
+{% extends "template.html"%}
+{%block head%}
+    <title>Página principal</title>
+{%endblock%}
+{%block body%}
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>modelo</th>
+                <th>cor</th>
+                <th>ano</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for dado in user%}
+            <tr>
+                <td>{{dado.id}}</td>
+                <td>{{dado.nome}}</td>
+                <td>{{dado.cpf}}</td>
+                <td>{{dado.senha}}</td> 
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+        
+    </ul>
+{%endblock%}

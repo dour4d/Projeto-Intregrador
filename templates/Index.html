@@ -10,73 +10,76 @@
 </head>
 <body>
     <div class="barra">
-        <img class="logo" src="midia/logo.jpg">
+        <img class="logo" src="{{ url_for('static', filename='logo.jpg') }}">
         <nav class="menu">
             <button class="Home"><a href="">Home</a></button>
             <!-- <button class="Vender"><a href="">Vender</a></button> -->
-            <button class="Comprar"><a href="">Comprar</a></button>
-            <button class="filtro"><a href="">filtro</a></button>
+            <!-- <button class="Comprar"><a href="">comprar</a></button> -->
+            <!-- <button class="filtro"><a href="">filtro</a></button> -->
         </nav>
-        <button class="entrar"><a href="Login.html">Entrar</a></button>
+        <div>
+            <button class="entrar"><a href="login">Entrar</a></button>
+            <button class="sair"><a href="logout">logout</a> </button>
+        </div>
     </div>
     <div class="meio">
-        <img class="img" src="midia/img1.jpg"> 
+        <img class="img" src="{{ url_for('static', filename='img1.jpg') }}"> 
     </div>
     <div class="produtos">
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/uno_escada.jpg">
+            <img class="fotos_carros" src="{{ url_for('static', filename='uno_escada.jpg') }}">
             <div class="divf1">
                 <h5 class="titul">Uno com escada</h5>
                 <p class="preco">R$:5.230.400,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao" name="UnoEscada"><a href="comprar/{{3}}" >Comprar</a></button>
                 
             </div>
         </div>
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/bug.jpg">
+            <img class="fotos_carros" src="{{ url_for('static', filename='bug.jpg') }}">
             <div class="divf1">
                 <h5 class="titul">Bugatti Veyron </h5>
                 <p class="preco">R$:4.432.200,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao"><a href="comprar/{{6}}" >Comprar</a></button>
             </div>
         </div>
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/chevette-junior.jpg">
+            <img class="fotos_carros" src="{{ url_for('static', filename='chevette-junior.jpg') }}">
             <div class="divf1">
                 <h5 class="titul">chevette-junior</h5>
                 <p class="preco">R$:2.900.100,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao"><a href="comprar/{{7}}" >Comprar</a></button>
             </div>
             
         </div>
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/rato.png">
+            <img class="fotos_carros" src="{{ url_for('static', filename='rato.png') }}">
             <div class="divf1">
                 <h5 class="titul">Super carro de rato</h5>
                 <p class="preco">R$:2.125.000,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao"><a href="comprar/{{3}}" >Comprar</a></button>
             </div>
         </div>
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/volkswagen_gol.jpeg">
+            <img class="fotos_carros" src="{{ url_for('static', filename='volkswagen_gol.jpeg') }}">
             <div class="divf1">
                 <h5 class="titul">Gol</h5>
                 <p class="preco">R$:3.542.400,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao"><a href="comprar/{{8}}" >Comprar</a></button>
             </div>
         </div>
         <div class="divF1">
-            <img class="fotos_carros" src="Midia/volkswagen_fusca.jpg">
+            <img class="fotos_carros" src="{{ url_for('static', filename='volkswagen_fusca.jpg') }}">
             <div class="divf1">
                 <h5 class="titul">Fusca</h5>
                 <p class="preco">R$:7.500.300,00</p>
-                <button class="butao">Comprar</button>
+                <button class="butao"><a href="/comprar/{{1}}" >Comprar</a></button>
             </div>
         </div>
     </div>
     <div class="rodape">
-        <img class="logof" src="midia/logo.jpg">
-        <h5 class="textRodape">Dono do site: Nathanael</h5>
+        <img class="logof" src="{{ url_for('static', filename='logo.jpg') }}">
+        <h5 class="textRodape">Dev confia: Nathanael</h5>
         <h5 class="textRodape">Numero de Contato: 4002-8922</h5>
     </div>
 </body>

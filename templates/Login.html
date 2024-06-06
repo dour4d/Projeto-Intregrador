@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script  src="./script.js"></script>
+    <script  src="controle.py"></script>
     <title>login</title>
 </head>
 <body>
     <div class="full">
         <div class="tela">
-            <form method="POST" class="formLogin" target="_self">
-                <h1 >Login</h1>
-                <label for="email">E-mail</label>
-                <input type="email" name="nome" placeholder="Digite seu nome" autofocus="true" />
+            <form method="POST" class="formLogin" action="{{ url_for('autenticar') }}">
+                <h1>Login</h1>
+                <label for="email">Nome</label>
+                <input type="hidden" name="proxima" value="{{ proxima or url_for('index') }}">
+                <input type="text" name="nome" placeholder="Digite seu nome" autofocus="true" />
                 <label for="password">Senha</label>
                 <input type="password" name="senha" placeholder="Digite sua senha" />
-                <p><a class="link"href="Cadrastro.html">Cadrastro</a></p>
+                <p><a class="link"href="cad">Cadrastro</a></p>
                 <input type="submit" value="Acessar" class="btn" onclick="bt_login"/>
             </form>
         </div>
